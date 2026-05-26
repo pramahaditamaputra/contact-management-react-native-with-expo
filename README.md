@@ -1,16 +1,17 @@
 # Contact Management Mobile App for Technical Test
 
-![Expo](https://img.shields.io/badge/Expo-56-000020?logo=expo&logoColor=white)
-![Uniwind](https://img.shields.io/badge/Uniwind-1.x-111827?logo=tailwindcss&logoColor=white)
+![Expo](https://img.shields.io/badge/Expo-56.0.4-000020?logo=expo&logoColor=white)
+![Uniwind](https://img.shields.io/badge/Uniwind-1.7.0-111827?logo=tailwindcss&logoColor=white)
 ![Node](https://img.shields.io/badge/Node.js-24%20LTS-339933?logo=nodedotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
-![React Native](https://img.shields.io/badge/React%20Native-0.85-20232A?logo=react&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)
-![Redux Toolkit](https://img.shields.io/badge/Redux%20Toolkit-2.x-764ABC?logo=redux)
-![TanStack Query](https://img.shields.io/badge/TanStack%20Query-5.x-FF4154?logo=reactquery&logoColor=white)
-![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-7.x-EC5990?logo=reacthookform&logoColor=white)
-![React Native Testing Library](https://img.shields.io/badge/React%20Native%20Testing%20Library-14.x-E33332?logo=testinglibrary&logoColor=white)
-![Zod](https://img.shields.io/badge/Zod-3.x-3E67B1)
+![React](https://img.shields.io/badge/React-19.2.3-61DAFB?logo=react&logoColor=black)
+![React Native](https://img.shields.io/badge/React%20Native-0.85.3-20232A?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)
+![Redux Toolkit](https://img.shields.io/badge/Redux%20Toolkit-2.12.0-764ABC?logo=redux)
+![Vitest](https://img.shields.io/badge/Vitest-3.2.4-6E9F18?logo=vitest&logoColor=white)
+![TanStack Query](https://img.shields.io/badge/TanStack%20Query-5.100.14-FF4154?logo=reactquery&logoColor=white)
+![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-7.76.1-EC5990?logo=reacthookform&logoColor=white)
+![React Native Testing Library](https://img.shields.io/badge/React%20Native%20Testing%20Library-13.2.0-E33332?logo=testinglibrary&logoColor=white)
+![Zod](https://img.shields.io/badge/Zod-4.4.3-3E67B1)
 ![Coverage](https://codecov.io/gh/pramahaditamaputra/contact-management-react-native-with-expo/branch/main/graph/badge.svg)
 ![CI](https://github.com/pramahaditamaputra/contact-management-react-native-with-expo/actions/workflows/ci.yml/badge.svg?branch=main)
 
@@ -22,17 +23,17 @@ Watch the app showcase here:
 
 [Contact Management Video Demo](https://drive.google.com/file/d/1pjNazxARl7samAdL5rLJ1WATCH2m4l52/view?usp=sharing)
 
-A modern Contact Management mobile application built with Expo SDK 56 + React Native 0.85 + React 19, TypeScript, Redux Toolkit and TanStack Query, React Hook Form, Zod, Uniwind, React Native Testing Library following a feature-based clean architecture.
+A modern Contact Management mobile application built with Expo SDK 56.0.4 + React Native 0.85.3 + React 19.2.3, TypeScript 5.9, Redux Toolkit 2.12.0 and TanStack Query 5.100.14, React Hook Form 7.76.1, Zod 4.4.3, Uniwind 1.7.0, React Native Testing Library 13.2.0 following a feature-based clean architecture.
 
 ## Tech Stack
 
-- Framework: Expo SDK 56 + React Native 0.85 + React 19
-- Language: TypeScript 5
-- State Management: Redux Toolkit
-- Server State: TanStack Query
-- Forms: React Hook Form + Zod
-- Styling: Uniwind + Stylesheet
-- Testing: React Native Testing Library
+- Framework: Expo SDK 56.0.4 + React Native 0.85.3 + React 19.2.3
+- Language: TypeScript 5.9
+- State Management: Redux Toolkit 2.12.0
+- Server State: TanStack Query 5.100.14
+- Forms: React Hook Form 7.76.1 + Zod 4.4.3
+- Styling: Uniwind 1.7.0 + Stylesheet
+- Testing: Vitest 3.2.4 + React Native Testing Library 13.2.0
 
 ## Getting Started
 
