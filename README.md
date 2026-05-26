@@ -13,7 +13,7 @@
 ![Coverage](https://codecov.io/gh/pramahaditamaputra/contact-management-react-native-with-expo/branch/main/graph/badge.svg)
 ![CI](https://github.com/pramahaditamaputra/contact-management-react-native-with-expo/actions/workflows/ci.yml/badge.svg?branch=main)
 
-[Live Demo - Download APK for Android](https://drive.google.com/file/d/1Q5b2kmgH3xXjGYgrYfC4JtS9ZTcxt88N/view?usp=sharing)
+[Live Demo - Download APK for Android](https://drive.google.com/file/d/1sg7QJ8zro5ZFKx-WegvpM3T14tjBEqiW/view?usp=sharing)
 
 ## Video Demo
 
