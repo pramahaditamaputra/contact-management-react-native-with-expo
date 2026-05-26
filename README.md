@@ -1,4 +1,4 @@
-# Contact Management Web App for Technical Test
+# Contact Management Mobile App for Technical Test
 
 ![Expo](https://img.shields.io/badge/Expo-56-000020?logo=expo&logoColor=white)
 ![Uniwind](https://img.shields.io/badge/Uniwind-1.x-111827?logo=tailwindcss&logoColor=white)
