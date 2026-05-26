@@ -21,5 +21,5 @@ export const contactsEntityToUi = (entity: Contact[]) => {
     email: contact.email,
     dob: new Date(contact.dob).toLocaleDateString(),
     picture: contact.picture,
-  }));
+  })) as ContactUi[];
 };

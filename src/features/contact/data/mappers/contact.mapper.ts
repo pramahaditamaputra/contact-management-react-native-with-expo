@@ -11,6 +11,7 @@ export const contactsDtoToEntity = (dto: ContactResponseDto): Contact[] => {
         phone: result.phone,
         picture: result.picture.large,
         dob: result.dob.date,
+        location: `${result.location.street.number} ${result.location.street.name}, ${result.location.city}, ${result.location.state}, ${result.location.country}`,
       }) as Contact,
   );
 };

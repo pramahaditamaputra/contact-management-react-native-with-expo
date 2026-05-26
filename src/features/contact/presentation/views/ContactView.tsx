@@ -1,3 +1,4 @@
+import * as Icon from "@expo/vector-icons";
 import { LegendList, LegendListRenderItemProps } from "@legendapp/list";
 import { Image, Text, TouchableOpacity, View } from "react-native";
 import SearchBar from "../components/SearchBar";
@@ -29,12 +30,17 @@ const ContactView = () => {
   const renderItem = ({ item }: LegendListRenderItemProps<ContactUi>) => {
     return (
       <TouchableOpacity onPress={() => navigate.gotoContactDetailScreen(item)}>
-        <View className="flex-row items-center gap-4 px-4 py-4 bg-white">
-          <Image
-            source={{ uri: item.picture }}
-            className="w-12 h-12 rounded-full"
-          />
-          <Text>{item.name}</Text>
+        <View className="bg-white flex-row items-center justify-between gap-4 px-4 py-4">
+          <View className="flex-row items-center gap-4">
+            <Image
+              source={{ uri: item.picture }}
+              className="w-12 h-12 rounded-full"
+            />
+            <Text>{item.name}</Text>
+          </View>
+          <View>
+            <Icon.MaterialIcons name="navigate-next" size={24} color="gray" />
+          </View>
         </View>
       </TouchableOpacity>
     );

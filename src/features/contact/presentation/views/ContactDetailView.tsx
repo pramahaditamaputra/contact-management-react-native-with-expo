@@ -1,27 +1,31 @@
-import { Image, Text, View } from "react-native";
-import Card from "../components/Card";
+import { ScrollView } from "react-native";
+import ContactDetailContent from "../components/ContactDetailContent";
+import ContactDetailHeader from "../components/ContactDetailHeader";
 import useContactDetailViewModel from "../viewmodels/useContactDetailViewModel";
 
 const ContactDetailView = () => {
-  const { contactDetailData } = useContactDetailViewModel();
+  const { contactDetailData, handleCall, handleSms } =
+    useContactDetailViewModel();
 
   return (
-    <View className="flex-1 px-4 items-center bg-white">
-      <View className="w-full items-center gap-4 my-6">
-        <Image
-          source={{ uri: contactDetailData.picture }}
-          className="w-32 h-32 rounded-full"
-        />
-        <Text className="text-xl font-bold">{contactDetailData.name}</Text>
-        <Text>{contactDetailData.email}</Text>
-      </View>
-
-      <View className="w-full gap-4">
-        <Card title="Phone" description={contactDetailData.phone} />
-        <Card title="Email" description={contactDetailData.email} />
-        <Card title="Date of Birth" description={contactDetailData.dob} />
-      </View>
-    </View>
+    <ScrollView
+      contentContainerStyle={{ alignItems: "center", flexGrow: 1 }}
+      className="px-4 py-6 bg-white pb-safe"
+    >
+      <ContactDetailHeader
+        name={contactDetailData.name}
+        picture={contactDetailData.picture}
+        phone={contactDetailData.phone}
+        handleCall={handleCall}
+        handleSms={handleSms}
+      />
+      <ContactDetailContent
+        email={contactDetailData.email}
+        dob={contactDetailData.dob}
+        location={contactDetailData.location}
+        phone={contactDetailData.phone}
+      />
+    </ScrollView>
   );
 };
 
