@@ -6,23 +6,31 @@ const useContactDetailViewModel = () => {
   const { data } = useLocalSearchParams();
   const contactData = JSON.parse(data as string) as ContactUi;
 
-  const handleCall = async (phoneNumber: string) => {
-    const url = `tel:${phoneNumber}`;
-    const canOpen = await Linking.canOpenURL(url);
+  const normalizePhoneNumber = (phoneNumber: string) =>
+    phoneNumber.replace(/[^\d+]/g, "");
 
-    if (canOpen) {
+  const handleCall = async (phoneNumber: string) => {
+    const normalizedPhoneNumber = normalizePhoneNumber(phoneNumber);
+    const url = `tel:${normalizedPhoneNumber}`;
+
+    try {
       await Linking.openURL(url);
+    } catch (error) {
+      console.warn("Failed to open call URL:", error);
     }
   };
 
   const handleSms = async (phoneNumber: string) => {
-    const url = `sms:${phoneNumber}`;
-    const canOpen = await Linking.canOpenURL(url);
+    const normalizedPhoneNumber = normalizePhoneNumber(phoneNumber);
+    const url = `sms:${normalizedPhoneNumber}`;
 
-    if (canOpen) {
+    try {
       await Linking.openURL(url);
+    } catch (error) {
+      console.warn("Failed to open SMS URL:", error);
     }
   };
+
   return { contactDetailData: contactData, handleCall, handleSms };
 };
 
