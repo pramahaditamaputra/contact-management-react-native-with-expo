@@ -4,26 +4,29 @@
     "slug": "contact-management-react-native-with-expo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/splash-icon.svg",
+    "icon": "./assets/images/splash-icon.png",
     "scheme": "contactmanagementreactnativewithexpo",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/images/splash-icon.svg",
-      "bundleIdentifier": "com.pramahaditamaputra.contactmanagementreactnativewithexpo"
+      "icon": "./assets/images/splash-icon.png",
+      "bundleIdentifier": "com.pramahaditamaputra.contactmanagementreactnativewithexpo",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/splash-icon.svg",
-        "backgroundImage": "./assets/images/splash-icon.svg",
-        "monochromeImage": "./assets/images/splash-icon.svg"
+        "foregroundImage": "./assets/images/splash-icon.png",
+        "backgroundImage": "./assets/images/splash-icon.png",
+        "monochromeImage": "./assets/images/splash-icon.png"
       },
       "predictiveBackGestureEnabled": false,
       "package": "com.pramahaditamaputra.contactmanagementreactnativewithexpo"
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/splash-icon.svg"
+      "favicon": "./assets/images/splash-icon.png"
     },
     "plugins": [
       "expo-router",
@@ -32,11 +35,11 @@
         {
           "backgroundColor": "#208AEF",
           "android": {
-            "image": "./assets/images/splash-icon.svg",
+            "image": "./assets/images/splash-icon.png",
             "imageWidth": 76
           },
           "ios": {
-            "image": "./assets/images/splash-icon.svg",
+            "image": "./assets/images/splash-icon.png",
             "imageWidth": 76
           }
         }
