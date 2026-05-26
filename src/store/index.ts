@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counterSlice from "./global.slices";
+import searchContactReducer from "../features/contact/presentation/state/searchContact.slices";
 
 export const store = configureStore({
   reducer: {
-    counter: counterSlice,
+    searchContact: searchContactReducer,
   },
 });
 
