@@ -1,56 +1,125 @@
-# Welcome to your Expo app 👋
+# Contact Management Web App for Technical Test
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![Node](https://img.shields.io/badge/Node.js-24%20LTS-339933?logo=nodedotjs&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-16.2.6-000000?logo=next.js)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)
+![Redux Toolkit](https://img.shields.io/badge/Redux%20Toolkit-2.x-764ABC?logo=redux)
+![TanStack Query](https://img.shields.io/badge/TanStack%20Query-5.x-FF4154?logo=reactquery&logoColor=white)
+![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-7.x-EC5990?logo=reacthookform&logoColor=white)
+![Zod](https://img.shields.io/badge/Zod-3.x-3E67B1)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.x-06B6D4?logo=tailwindcss&logoColor=white)
+![Vitest](https://img.shields.io/badge/tests-vitest-ff69b4)
+![Testing Library](https://img.shields.io/badge/Testing%20Library-14.x-E33332?logo=testinglibrary&logoColor=white)
+![Coverage](https://codecov.io/gh/pramahaditamaputra/contact-management-react-with-nextjs/branch/main/graph/badge.svg)
+![CI](https://github.com/pramahaditamaputra/contact-management-react-with-nextjs/actions/workflows/ci.yml/badge.svg?branch=main)
 
-## Get started
+[Live Demo - Download APK for Android](https://drive.google.com/file/d/1Q5b2kmgH3xXjGYgrYfC4JtS9ZTcxt88N/view?usp=sharing)
 
-1. Install dependencies
+## Video Demo
 
-   ```bash
-   npm install
-   ```
+Watch the app showcase here:
 
-2. Start the app
+[Contact Management Video Demo](https://drive.google.com/file/d/1pjNazxARl7samAdL5rLJ1WATCH2m4l52/view?usp=sharing)
 
-   ```bash
-   npx expo start
-   ```
+A modern Contact Management mobile application built with Expo SDK 56 + React 19, TypeScript, Redux Toolkit and TanStack Query, React Hook Form, Zod, Uniwind, React Native Testing Library following a feature-based clean architecture.
 
-In the output, you'll find options to open the app in a
+## Tech Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Framework: Expo SDK 56 + React 19
+- Language: TypeScript 5
+- State Management: Redux Toolkit
+- Server State: TanStack Query
+- Forms: React Hook Form + Zod
+- Styling: Uniwind + Stylesheet
+- Testing: React Native Testing Library
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Getting Started
 
-## Get a fresh project
+Prerequisites:
 
-When you're ready, run:
+- Node.js 24 LTS
+- npm
+
+Install dependencies:
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Environment variables (create `.env`):
 
-### Other setup steps
+```bash
+EXPO_PUBLIC_API_BASE_URL=https://randomuser.me/api
+```
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+Run development server:
 
-## Learn more
+```bash
+npm run ios
+npm run android
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+## Available Scripts
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npm run start      # start dev metro server
+npm run ios        # run development in ios
+npm run android    # run development in android
+npm run lint       # run eslint
+npm run test       # run vitest (watch mode depends on your config)
+npm run coverage   # run tests with coverage
+```
 
-## Join the community
+## API
 
-Join our community of developers creating universal apps.
+This app expects a contacts API. Default base URL used in development:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- `EXPO_PUBLIC_API_BASE_URL=https://randomuser.me/api`
+
+## Project Structure (high level)
+
+```
+src/
+├── app/           # Expo routes
+├── providers/     # App providers (Redux, QueryClient)
+├── store/         # Redux store + hooks
+├── shared/        # Shared UI, api client, utilities
+└── features/
+ └── contact/
+  ├── data/          # Data sources, mappers, repository implementation
+  │   ├── api/
+  │   ├── mappers/
+  │   └── repositories/
+  ├── domain/        # Entities, repository contracts, use cases
+  │   ├── entities/
+  │   ├── repositories/
+  │   └── usecases/
+  └── presentation/  # UI components, views, state, queries, viewmodels
+   ├── components/
+   ├── forms/
+   ├── queries/
+   ├── state/
+   ├── viewmodels/
+   └── views/
+```
+
+## Architecture Diagram
+
+[View Full Diagram](https://drive.google.com/file/d/1ZDjshRsDEX_M5En0DOM41eeZm5PTrCBb/view)
+
+![Clean Architecture Diagram](https://drive.google.com/uc?export=view&id=1ZDjshRsDEX_M5En0DOM41eeZm5PTrCBb)
+
+## Testing
+
+Unit and component tests are implemented with Vitest and Testing Library. Run:
+
+```bash
+npm run test
+npm run coverage
+```
+
+## Notes
+
+- The app is structured for maintainability and testability using a feature-based clean architecture.
+- Redux handles local/UI state (Search), while TanStack Query handles server state and caching.
