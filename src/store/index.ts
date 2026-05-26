@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import contactPaginationReducer from "../features/contact/presentation/state/contact-pagination.slice";
+import counterSlice from "./global.slices";
 
 export const store = configureStore({
   reducer: {
-    contactPagination: contactPaginationReducer,
+    counter: counterSlice,
   },
 });
 

@@ -21,6 +21,7 @@ export const contactApi = {
     const res = await apiClient.get<ContactResponseDto>(endpoints.contacts, {
       params,
     });
+
     return res.data;
   },
 };

@@ -18,6 +18,7 @@ export class ContactRepositoryImpl implements ContactRepository {
       pageSize,
       pageIndex,
     });
+
     return contactsDtoToEntity(data);
   }
 }

@@ -8,7 +8,8 @@
     "scheme": "contactmanagementreactnativewithexpo",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.pramahaditamaputra.contactmanagementreactnativewithexpo"
     },
     "android": {
       "adaptiveIcon": {
@@ -17,7 +18,8 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.pramahaditamaputra.contactmanagementreactnativewithexpo"
     },
     "web": {
       "output": "static",
@@ -34,11 +36,18 @@
             "imageWidth": 76
           }
         }
-      ]
+      ],
+      "expo-status-bar"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "6671435f-8039-4617-a728-c5c0f31b84a3"
+      }
     }
   }
 }
