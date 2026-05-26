@@ -4,6 +4,7 @@
 ![Uniwind](https://img.shields.io/badge/Uniwind-1.x-111827?logo=tailwindcss&logoColor=white)
 ![Node](https://img.shields.io/badge/Node.js-24%20LTS-339933?logo=nodedotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
+![React Native](https://img.shields.io/badge/React%20Native-0.85-20232A?logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)
 ![Redux Toolkit](https://img.shields.io/badge/Redux%20Toolkit-2.x-764ABC?logo=redux)
 ![TanStack Query](https://img.shields.io/badge/TanStack%20Query-5.x-FF4154?logo=reactquery&logoColor=white)
@@ -21,11 +22,11 @@ Watch the app showcase here:
 
 [Contact Management Video Demo](https://drive.google.com/file/d/1pjNazxARl7samAdL5rLJ1WATCH2m4l52/view?usp=sharing)
 
-A modern Contact Management mobile application built with Expo SDK 56 + React 19, TypeScript, Redux Toolkit and TanStack Query, React Hook Form, Zod, Uniwind, React Native Testing Library following a feature-based clean architecture.
+A modern Contact Management mobile application built with Expo SDK 56 + React Native 0.85 + React 19, TypeScript, Redux Toolkit and TanStack Query, React Hook Form, Zod, Uniwind, React Native Testing Library following a feature-based clean architecture.
 
 ## Tech Stack
 
-- Framework: Expo SDK 56 + React 19
+- Framework: Expo SDK 56 + React Native 0.85 + React 19
 - Language: TypeScript 5
 - State Management: Redux Toolkit
 - Server State: TanStack Query
