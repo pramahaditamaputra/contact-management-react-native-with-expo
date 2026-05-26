@@ -3,7 +3,7 @@ import { router } from "expo-router";
 import { useCallback, useRef, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../../../store/hooks";
 import { useContactsQuery } from "../queries/useContactsQuery";
-import { setContactSearchTerm } from "../state/searchContact.slices";
+import { setContactSearchTerm } from "../state/searchContactSlice";
 import { ContactUi } from "./mappers/contact.mapper";
 
 const useContactViewModel = () => {

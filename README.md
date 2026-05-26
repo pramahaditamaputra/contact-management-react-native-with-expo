@@ -1,16 +1,15 @@
 # Contact Management Web App for Technical Test
 
+![Expo](https://img.shields.io/badge/Expo-56-000020?logo=expo&logoColor=white)
+![Uniwind](https://img.shields.io/badge/Uniwind-1.x-111827?logo=tailwindcss&logoColor=white)
 ![Node](https://img.shields.io/badge/Node.js-24%20LTS-339933?logo=nodedotjs&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-16.2.6-000000?logo=next.js)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)
 ![Redux Toolkit](https://img.shields.io/badge/Redux%20Toolkit-2.x-764ABC?logo=redux)
 ![TanStack Query](https://img.shields.io/badge/TanStack%20Query-5.x-FF4154?logo=reactquery&logoColor=white)
 ![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-7.x-EC5990?logo=reacthookform&logoColor=white)
+![React Native Testing Library](https://img.shields.io/badge/React%20Native%20Testing%20Library-14.x-E33332?logo=testinglibrary&logoColor=white)
 ![Zod](https://img.shields.io/badge/Zod-3.x-3E67B1)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.x-06B6D4?logo=tailwindcss&logoColor=white)
-![Vitest](https://img.shields.io/badge/tests-vitest-ff69b4)
-![Testing Library](https://img.shields.io/badge/Testing%20Library-14.x-E33332?logo=testinglibrary&logoColor=white)
 ![Coverage](https://codecov.io/gh/pramahaditamaputra/contact-management-react-with-nextjs/branch/main/graph/badge.svg)
 ![CI](https://github.com/pramahaditamaputra/contact-management-react-with-nextjs/actions/workflows/ci.yml/badge.svg?branch=main)
 
@@ -79,7 +78,7 @@ This app expects a contacts API. Default base URL used in development:
 
 ## Project Structure (high level)
 
-```
+```text
 src/
 ├── app/           # Expo routes
 ├── providers/     # App providers (Redux, QueryClient)

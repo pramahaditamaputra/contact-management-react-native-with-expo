@@ -1,0 +1,5 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SearchBar > matches snapshot when empty 1`] = `null`;
+
+exports[`SearchBar > matches snapshot when filled 1`] = `null`;
