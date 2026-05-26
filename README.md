@@ -10,7 +10,7 @@
 ![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-7.x-EC5990?logo=reacthookform&logoColor=white)
 ![React Native Testing Library](https://img.shields.io/badge/React%20Native%20Testing%20Library-14.x-E33332?logo=testinglibrary&logoColor=white)
 ![Zod](https://img.shields.io/badge/Zod-3.x-3E67B1)
-![Coverage](https://codecov.io/gh/pramahaditamaputra/contact-management-react-with-nextjs/branch/main/graph/badge.svg)
+![Coverage](https://codecov.io/gh/pramahaditamaputra/contact-management-react-native-with-expo/branch/main/graph/badge.svg)
 ![CI](https://github.com/pramahaditamaputra/contact-management-react-with-nextjs/actions/workflows/ci.yml/badge.svg?branch=main)
 
 [Live Demo - Download APK for Android](https://drive.google.com/file/d/1Q5b2kmgH3xXjGYgrYfC4JtS9ZTcxt88N/view?usp=sharing)
